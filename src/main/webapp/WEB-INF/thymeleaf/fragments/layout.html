@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="Alex Tsurkin" />
+<title>Yummy Noodle Bar</title>
+<link href="resources/themes/bootstrap/css/theme.css" th:href="${#themes.code('styleSheet')}" rel="stylesheet" />
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<style>
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+</style>
+</head>
+<body>
+	<div th:fragment="header">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+					</a> <a class="brand" href="/">Yummy Noodle Bar</a>
+					<div class="nav-collapse collapse">
+						<p class="navbar-text pull-right"></p>
+						<ul class="nav">
+							<li><a href="/">Home</a></li>
+							<li><a href="/showBasket">Basket</a></li>
+						</ul>
+					</div>
+					<!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div th:fragment="left">
+		<div class="well sidebar-nav span3">
+			<ul class="nav nav-list">
+				<li class="nav-header">Navigation could go here</li>
+				<li><a href="http://www.gopivotal.com/">Pivotal, Inc</a></li>
+				<li><a href="http://www.springsource.org/spring-xd">Spring XD</a></li>
+				<li><a href="http://spring.io">Spring</a></li>
+			</ul>
+		</div>
+	</div>
+	<div th:fragment="footer">
+		<footer>
+			<p>&copy; I saw You 2014</p>
+		</footer>
+	</div>
+	<div th:fragment="nested">
+		<p>nested</p>
+	</div>
+	<!-- 
+	 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> -->
+</body>
+</html>
